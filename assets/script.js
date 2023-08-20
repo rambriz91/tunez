@@ -140,30 +140,46 @@ function tuneIn () {
         genreEl.textContent = 'Classic Rock';
         nameEl.textContent = '101KGB';
      }
-     else if (tunerEl.value ==) {
-        audioEl.setAttribute('src', '');
-        stationEl.textContent = '';
-        genreEl.textContent = '';
-        nameEl.textContent = '';
+     //broken CORB
+     else if (tunerEl.value == 102.5) {
+        audioEl.setAttribute('src', 'https://s2.mexside.net/cp/widgets/player/?p=8036&type=rain');
+        stationEl.textContent = 'XHUAN';
+        genreEl.textContent = 'Spanish';
+        nameEl.textContent = 'Fusion 102.5';
      }
-     else if (tunerEl.value ==) {
-        audioEl.setAttribute('src', '');
-        stationEl.textContent = '';
-        genreEl.textContent = '';
-        nameEl.textContent = '';
+     //broken CORB
+     else if (tunerEl.value == 102.9) {
+        audioEl.setAttribute('src', 'https://www.iheart.com/live/amor-1029-5212/?embed=true');
+        stationEl.textContent = 'KLQV';
+        genreEl.textContent = 'Spanish Hits';
+        nameEl.textContent = 'Amor 102.9';
+
+        //<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/amor-1029-5212/?embed=true" frameborder="0"></iframe>
      }
-     else if (tunerEl.value ==) {
-        audioEl.setAttribute('src', '');
-        stationEl.textContent = '';
-        genreEl.textContent = '';
-        nameEl.textContent = '';
+     else if (tunerEl.value == 103.7) {
+        audioEl.setAttribute('src', 'https://www.audacy.com/stations/kson?action=AUTOPLAY_FULL&actionContentId=101-925');
+        stationEl.textContent = 'KSON';
+        genreEl.textContent = 'Country';
+        nameEl.textContent = '103.7 KSON';
      }
-     else if (tunerEl.value ==) {
-        audioEl.setAttribute('src', '');
-        stationEl.textContent = '';
-        genreEl.textContent = '';
-        nameEl.textContent = '';
+     else if (tunerEl.value ==104.5) {
+        audioEl.setAttribute('src', 'http://18153.live.streamtheworld.com/XLTNFM_SC');
+        stationEl.textContent = 'XHLTN';
+        genreEl.textContent = 'Spanish Hits';
+        nameEl.textContent = 'Radio Latina';
      }
+     else if (tunerEl.value ==106.5) {
+        audioEl.setAttribute('src', 'https://www.univision.com/radio/san-diego-klnv-fm/que-buena-106-5-fm');
+        stationEl.textContent = 'KLNV';
+        genreEl.textContent = 'Regional Mexican';
+        nameEl.textContent = 'Que Buena';
+     }
+    //  else if (tunerEl.value =='') {
+    //     audioEl.setAttribute('src', '');
+    //     stationEl.textContent = '';
+    //     genreEl.textContent = '';
+    //     nameEl.textContent = '';
+    //  }
     else {
         return;
     }
