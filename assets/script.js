@@ -116,7 +116,7 @@ function tuneIn() {
       stationEl.textContent = 'XHTIM';
       genreEl.textContent = 'Regional Mexican';
       nameEl.textContent = 'La Mejor 90.7';
-      audioEl.insertAdjacentHTML('afterend', '<iframe allow="auttoplay" src="https://tunein.com/embed/player/s24607/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>')
+      audioEl.insertAdjacentHTML('afterend', '<iframe allow="autoplay" src="https://tunein.com/embed/player/s24607/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>')
    }
    //broken CORB
    else if (tunerEl.value == 98.1) {
