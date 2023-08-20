@@ -28,8 +28,9 @@ tunerLeftEl.addEventListener('click', function() {
 function tuneIn () {
     if (tunerEl.value == 88.3) {
         audioEl.setAttribute('src', 'http://listen.jazz88.org/ksds.mp3');
-        stationEl.textContent = 'KSDS'
-        genreEl.textContent = 'Jazz'
+        stationEl.textContent = 'KSDS';
+        genreEl.textContent = 'Jazz';
+        nameEl.textContent = 'KSDS';
     } 
     else if (tunerEl.value >= 89.1 && tunerEl.value <= 89.5) {
         audioEl.setAttribute('src', 'http://kpbs.streamguys1.com/kpbs-aac');
@@ -46,7 +47,7 @@ function tuneIn () {
      }
      //broken
     else if (tunerEl.value == 91.1) {
-        audioEl.setAttribute('src','https://player.listenlive.co/36281');
+        audioEl.setAttribute('src','https://player.listenlive.co/36281/en');
         stationEl.textContent = 'XETRA';
         genreEl.textContent = 'Alternative';
         nameEl.textContent = '91X';
@@ -58,7 +59,7 @@ function tuneIn () {
         genreEl.textContent = 'Rythmic Oldies';
         nameEl.textContent = 'Magic 92.5';
      }
-     //broken
+     //broken CORB
      else if (tunerEl.value == 93.3) {
         audioEl.setAttribute('src','https://www.iheart.com/live/channel-933-241/?autoplay=true');
         stationEl.textContent = 'KHTS';
@@ -71,12 +72,14 @@ function tuneIn () {
         genreEl.textContent = 'Public Radio';
         nameEl.textContent = 'KPFK';
      }
-     //broken CORB
+     //broken CORB- CAN FIX
      else if (tunerEl.value == 94.1) {
         audioEl.setAttribute('src','https://www.iheart.com/live/star-941-253/?autoplay=true');
+        //audioEl.innerHTML = '<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/star-941-253/?embed=true" frameborder="0"></iframe>'
         stationEl.textContent = 'KMYI';
         genreEl.textContent = 'Hot AC';
         nameEl.textContent = 'Star 94.1';
+        //<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/star-941-253/?embed=true" frameborder="0"></iframe>
      }
      else if (tunerEl.value == 94.5) {
         audioEl.setAttribute('src','https://streamingcwsradio30.com:7023/stream?type=http&nocache=1');
@@ -90,13 +93,16 @@ function tuneIn () {
         stationEl.textContent = 'KBZT';
         genreEl.textContent = 'Alternative';
         nameEl.textContent = 'ALT 94.9';
+        //<audio preload="auto" src="blob:https://www.audacy.com/a1ddfa7a-f5e3-499d-bb3c-6376b5ed56fb"></audio>
+
      }
-     //broken CORB
+     //broken CORB- CAN FIX
      else if (tunerEl.value == 95.7) {
         audioEl.setAttribute('src','https://www.iheart.com/live/jamn-957-261/?autoplay=true');
         stationEl.textContent = 'KSSX';
         genreEl.textContent = 'Hip-hop & Throwbacks';
         nameEl.textContent = `JAM'N 95.7`;
+        //<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/jamn-957-261/?embed=true" frameborder="0"></iframe>
      }
      //broken CORB
      else if (tunerEl.value == 96.5) {
@@ -104,13 +110,15 @@ function tuneIn () {
         stationEl.textContent = 'KYXY';
         genreEl.textContent = 'Adult Contemporary';
         nameEl.textContent = 'KyXy 96.5';
+        //<audio preload="auto" src="blob:https://www.audacy.com/ce30c7d2-20ee-4c36-8a78-389d20cf1be1"></audio>
      }
-     //broken CORB
+     //broken CORB - CAN FIX
      else if (tunerEl.value == 97.7) {
         audioEl.setAttribute('src','http://tun.in/sepuX');
         stationEl.textContent = 'XHTIM';
         genreEl.textContent = 'Regional Mexican';
         nameEl.textContent = 'La Mejor 90.7';
+        //<iframe src="https://tunein.com/embed/player/s24607/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>
      }
      //broken CORB
      else if (tunerEl.value == 98.1) {
@@ -133,12 +141,13 @@ function tuneIn () {
         genreEl.textContent = 'Caribbean';
         nameEl.textContent = 'World Beat Radio';
      }
-     //Broken CORB
+     //Broken CORB -can Fix
      else if (tunerEl.value == 101.5) {
         audioEl.setAttribute('src','https://101kgb.iheart.com/api/v4/player/live/237/?sc=inferno&pname=KGB-FM&theme=light&ihrnetwork=true&embed=true');
         stationEl.textContent = 'KGB';
         genreEl.textContent = 'Classic Rock';
         nameEl.textContent = '101KGB';
+        //<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/kgb-1015-237/?embed=true" frameborder="0"></iframe>
      }
      //broken CORB
      else if (tunerEl.value == 102.5) {
@@ -156,6 +165,7 @@ function tuneIn () {
 
         //<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/amor-1029-5212/?embed=true" frameborder="0"></iframe>
      }
+     //broken CORB
      else if (tunerEl.value == 103.7) {
         audioEl.setAttribute('src', 'https://www.audacy.com/stations/kson?action=AUTOPLAY_FULL&actionContentId=101-925');
         stationEl.textContent = 'KSON';
@@ -168,6 +178,7 @@ function tuneIn () {
         genreEl.textContent = 'Spanish Hits';
         nameEl.textContent = 'Radio Latina';
      }
+     //broken
      else if (tunerEl.value ==106.5) {
         audioEl.setAttribute('src', 'https://www.univision.com/radio/san-diego-klnv-fm/que-buena-106-5-fm');
         stationEl.textContent = 'KLNV';
