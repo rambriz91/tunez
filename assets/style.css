@@ -64,8 +64,12 @@ h4 {
     font-size: 15px;
 }
 
-#tuner {
+#tuner-container {
     background-color: var(--deep-purple);
+}
+
+#tuner {
+    width: 100%;
 }
 
 #fav-stations {
@@ -78,7 +82,7 @@ h4 {
 }
 
 #frequency h2{
-    background: rgba(245, 245, 245, 0.514);
+    background: rgba(245, 245, 245, 0.333);
     width: 100px;
     height: 100px;
     margin: auto;
