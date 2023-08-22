@@ -9,6 +9,8 @@ var genreEl = document.getElementById('genre');
 var radioEl = document.getElementById('radio-container');
 
 
+
+
 tunerEl.oninput = function () {
    frequencyEl.children[1].textContent = tunerEl.value;
    tuneIn();
@@ -62,7 +64,7 @@ function tuneIn() {
       nameEl.textContent = 'Magic 92.5';
    }
    else if (tunerEl.value == 93.3) {
-      audioEl.setAttribute('src', 'https://www.iheart.com/live/channel-933-241/?autoplay=true');
+      audioEl.setAttribute('src', '');
       stationEl.textContent = 'KHTS';
       genreEl.textContent = 'Top-40';
       nameEl.textContent = 'iHeart Radio';
@@ -75,7 +77,7 @@ function tuneIn() {
       nameEl.textContent = 'KPFK';
    }
    else if (tunerEl.value == 94.1) {
-      audioEl.setAttribute('src', 'https://www.iheart.com/live/star-941-253/?autoplay=true');
+      audioEl.setAttribute('src', '');
       stationEl.textContent = 'KMYI';
       genreEl.textContent = 'Hot AC';
       nameEl.textContent = 'Star 94.1';
@@ -97,7 +99,7 @@ function tuneIn() {
 
    }
    else if (tunerEl.value == 95.7) {
-      audioEl.setAttribute('src', 'https://www.iheart.com/live/jamn-957-261/?autoplay=true');
+      audioEl.setAttribute('src', '');
       stationEl.textContent = 'KSSX';
       genreEl.textContent = 'Hip-hop & Throwbacks';
       nameEl.textContent = `JAM'N 95.7`;
@@ -112,7 +114,7 @@ function tuneIn() {
       //<audio preload="auto" src="blob:https://www.audacy.com/ce30c7d2-20ee-4c36-8a78-389d20cf1be1"></audio>
    }
    else if (tunerEl.value == 97.7) {
-      audioEl.setAttribute('src', 'http://tun.in/sepuX');
+      audioEl.setAttribute('src', '');
       stationEl.textContent = 'XHTIM';
       genreEl.textContent = 'Regional Mexican';
       nameEl.textContent = 'La Mejor 90.7';
@@ -140,7 +142,7 @@ function tuneIn() {
       nameEl.textContent = 'World Beat Radio';
    }
    else if (tunerEl.value == 101.5) {
-      audioEl.setAttribute('src', 'https://101kgb.iheart.com/api/v4/player/live/237/?sc=inferno&pname=KGB-FM&theme=light&ihrnetwork=true&embed=true');
+      audioEl.setAttribute('src', '');
       stationEl.textContent = 'KGB';
       genreEl.textContent = 'Classic Rock';
       nameEl.textContent = '101KGB';
@@ -154,7 +156,7 @@ function tuneIn() {
       nameEl.textContent = 'Fusion 102.5';
    }
    else if (tunerEl.value == 102.9) {
-      audioEl.setAttribute('src', 'https://www.iheart.com/live/amor-1029-5212/?embed=true');
+      audioEl.setAttribute('src', '');
       stationEl.textContent = 'KLQV';
       genreEl.textContent = 'Spanish Hits';
       nameEl.textContent = 'Amor 102.9';

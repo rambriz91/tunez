@@ -20,7 +20,7 @@ figure {
     color: var(--light);
     display: flex;
     flex-wrap: wrap;
-    width: 33%;
+    width: fit-content;
     border-radius: 5px;
     box-shadow: 4px 4px 2px 1px rgba(10, 1, 27, 0.895);
     
