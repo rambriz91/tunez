@@ -8,7 +8,7 @@ var nameEl = document.getElementById('name');
 var genreEl = document.getElementById('genre');
 var radioEl = document.getElementById('radio-container');
 
-let city = 'san diego'
+let city = 'los angeles'
 
 tunerEl.oninput = function () {
    frequencyEl.children[1].textContent = tunerEl.value;
