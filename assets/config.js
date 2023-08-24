@@ -1,6 +1,6 @@
 
 const data = {
-    'san diego': {
+    'San Diego': {
         '88.3': {
             url: 'http://listen.jazz88.org/ksds.mp3',
             callSign: 'KSDS',
@@ -230,7 +230,7 @@ const data = {
             iframe:'<iframe src="" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
         },
     },
-    'los angeles': {
+    'Los Angeles': {
         '88.1': {
             url: 'https://kkjz.org/',
             callSign: 'KKJZ',

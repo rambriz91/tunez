@@ -1,14 +1,23 @@
 const tunerEl = document.getElementById('tuner');
 const frequencyEl = document.getElementById('frequency');
 const tunerRightEl = document.querySelector('.fa-chevron-right');
-var tunerLeftEl = document.querySelector('.fa-chevron-left');
-var audioEl = document.getElementById('audio');
-var stationEl = document.getElementById('station');
-var nameEl = document.getElementById('name');
-var genreEl = document.getElementById('genre');
-var radioEl = document.getElementById('radio-container');
+const tunerLeftEl = document.querySelector('.fa-chevron-left');
+const audioEl = document.getElementById('audio');
+const stationEl = document.getElementById('station');
+const nameEl = document.getElementById('name');
+const genreEl = document.getElementById('genre');
+const radioEl = document.getElementById('radio-container');
+const locationEl =document.getElementById('location');
+const cityEl = document.querySelector('.dropdown-content');
 
-let city = 'los angeles'
+let city = '';
+
+cityEl.addEventListener('click', function(event){
+   locationEl.textContent = event.target.textContent;
+   console.log(event.target.textContent);
+   city = event.target.textContent;
+   console.log(event.target.innerHTML);
+});
 
 tunerEl.oninput = function () {
    frequencyEl.children[1].textContent = tunerEl.value;
@@ -30,6 +39,7 @@ tunerLeftEl.addEventListener('click', function () {
 function tuneIn() {
    let station = tunerEl.value;
    let stationConfig = data[city][station];
+   console.log(stationConfig)
 
    if (stationConfig) {
       removeIframe();

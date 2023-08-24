@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&family=Noto+Sans+JP&family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&family=Noto+Sans+JP&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Tunez</title>
 </head>
+
 <body>
     <figure>
         <header>
-            <span class="icon">
-                <i class="fa-solid fa-bars"></i>
-            </span>
-            <h1>FM Radio</h1>
+            <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span class="icon">
+                            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item">
+                            Los Angeles
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            San Diego
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h1 id="location">FM Radio</h1>
             <span class="icon">
                 <i id="power-btn" class="fa-solid fa-power-off"></i>
             </span>
@@ -52,4 +72,5 @@
     <script src="./assets/config.js"></script>
     <script src="./assets/script.js"></script>
 </body>
+
 </html>
