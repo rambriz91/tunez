@@ -1,7 +1,9 @@
 :root {
+    --light-purple: rgba(90, 64, 145, 0.895);
     --purple: rgba(66, 47, 106, 0.895);
     --body-purple: rgba(35, 17, 70, 0.895);
     --deep-purple:rgba(19, 2, 53, 0.895);
+    --dark-purple:rgba(10, 1, 27, 0.895);
     --light: aliceblue;
 }
 
@@ -22,7 +24,7 @@ figure {
     flex-wrap: wrap;
     width: fit-content;
     border-radius: 5px;
-    box-shadow: 4px 4px 2px 1px rgba(10, 1, 27, 0.895);
+    box-shadow: 4px 4px 2px 1px var(--dark-purple);
     
 }
 
@@ -98,4 +100,16 @@ h4 {
 
 .hidden {
     display: none;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+.icon:hover {
+    background-color: var(--light-purple);
+}
+
+.icon:active {
+    box-shadow: 2px 2px 5px var(--dark-purple);;
 }

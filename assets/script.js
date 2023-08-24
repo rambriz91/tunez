@@ -1,6 +1,6 @@
-var tunerEl = document.getElementById('tuner');
-var frequencyEl = document.getElementById('frequency');
-var tunerRightEl = document.querySelector('.fa-chevron-right');
+const tunerEl = document.getElementById('tuner');
+const frequencyEl = document.getElementById('frequency');
+const tunerRightEl = document.querySelector('.fa-chevron-right');
 var tunerLeftEl = document.querySelector('.fa-chevron-left');
 var audioEl = document.getElementById('audio');
 var stationEl = document.getElementById('station');
@@ -28,11 +28,11 @@ tunerLeftEl.addEventListener('click', function () {
 });
 
 function tuneIn() {
-   removeIframe();
    let station = tunerEl.value;
    let stationConfig = data[city][station];
 
    if (stationConfig) {
+      removeIframe();
       if (!stationConfig.isCompatible && !stationConfig.isIframe) {
          audioEl.setAttribute('class', 'hidden');
          audioEl.setAttribute('src', '');
