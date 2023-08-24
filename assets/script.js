@@ -15,7 +15,7 @@ let city = '';
 cityEl.addEventListener('click', function(event){
    locationEl.textContent = event.target.textContent;
    console.log(event.target.textContent);
-   city = event.target.textContent;
+   city = event.target.textContent.replaceAll('\n','').trim();
    console.log(event.target.innerHTML);
 });
 
