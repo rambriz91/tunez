@@ -360,7 +360,7 @@ const data = {
             genre: 'Regional Mexican',
             isIframe: true,
             isCompatible: false,
-            iframe:'<iframe src="https://estrellatv.com/radio/que-buena-los-angeles" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+            iframe:'<iframe src="https://estrellatv.com/radio/que-buena-los-angeles" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
         },
         '94.7': {
             url: 'https://www.audacy.com/947thewave',
@@ -369,7 +369,7 @@ const data = {
             genre: 'Urban Contemporary',
             isIframe: true,
             isCompatible: false,
-            iframe:'<iframe src="https://www.audacy.com/stations/947thewave?action=AUTOPLAY_FULL&actionContentId=101-323" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+            iframe:'<iframe src="https://www.audacy.com/stations/947thewave?action=AUTOPLAY_FULL&actionContentId=101-323" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
         },
         '95.1': {
             url: 'https://www.audacy.com/kfrog',
@@ -446,7 +446,7 @@ const data = {
             genre: `Spanish Hits 80's and 90's`,
             isIframe: true,
             isCompatible: false,
-            iframe:'<iframe src="https://www.univision.com/radio/los-angeles-krcd" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+            iframe:'<iframe src="https://www.univision.com/radio/los-angeles-krcd" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
         },
         '98.7': {
             url: 'https://alt987fm.iheart.com/',
@@ -476,8 +476,150 @@ const data = {
         '99.9': {
             url: 'https://www.kolafm.com/',
             callSign: 'KOLA',
-            name: '',
+            name: 'KOLA 99.9',
             genre: 'Classic Hits',
+            isIframe: false,
+            isCompatible: false,
+            iframe:'<iframe src="https://www.kolafm.com/" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+        },
+        '100.1': {
+            url: 'https://1001thequake.com/',
+            callSign: 'KQAV',
+            name: 'The Quake',
+            genre: 'Classic Rock',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://streamdb8web.securenetsystems.net/ce/index.cfm?CFID=15cb1860-bc3d-4d40-9b44-4b6b920cb941&CFTOKEN=0&stationCallSign=KKZQ" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+        },
+        '101.1': {
+            url: 'https://www.audacy.com/kearth101',
+            callSign: 'KRTH',
+            name: 'K-Earth 101',
+            genre: 'Classic Hits',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://www.audacy.com/stations/kearth101?action=AUTOPLAY_FULL&actionContentId=101-545" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+        },
+        '101.9': {
+            url: 'https://www.univision.com/radio/los-angeles-ksca-fm',
+            callSign: 'KSCA',
+            name: 'LA NUEVA 101.9',
+            genre: 'Regional Mexican',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://www.univision.com/radio/los-angeles-ksca-fm" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
+        },
+        '102.3': {
+            url: 'https://kjlhradio.com/',
+            callSign: 'KJLH',
+            name: 'Radio Free',
+            genre: 'Urban Contemporary',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://tunein.com/embed/player/s33339/" style="width:100%; height:100px;" scrolling="no" frameborder="no"></iframe>'
+        },
+        '102.7': {
+            url: 'https://kiisfm.iheart.com/',
+            callSign: 'KIIS',
+            name: 'KIIS FM',
+            genre: 'Top-40',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/1027-kiis-fm-los-angeles-185/?embed=true" frameborder="0"></iframe>'
+        },
+        '103.1': {
+            url: 'https://elboton.com/nacional/viva1031/',
+            callSign: 'KDLE',
+            name: 'Viva 103.1',
+            genre: 'Regional Mexican',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://elboton.com/nacional/viva1031/" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
+        },
+        '103.5': {
+            url: 'https://kost1035.iheart.com/',
+            callSign: 'KOST',
+            name: 'KOST 103.5',
+            genre: 'Adult Contemporary',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/kost-1035-193/?embed=true" frameborder="0"></iframe>'
+        },
+        '104.3': {
+            url: 'https://1043myfm.iheart.com/',
+            callSign: 'KBIG',
+            name: '104.3 MYfm',
+            genre: 'Hot Adult Contemporary',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/live/1043-myfm-173/?embed=true" frameborder="0"></iframe>'
+        },
+        '104.7': {
+            url: 'http://livecast1.soundofhope.org:2086/KQEVLPlive',
+            callSign: 'KQEV',
+            name: 'Chinese Radio',
+            genre: 'Chinese Variety',
+            isIframe: false,
+            isCompatible: true,
+        },
+        '105.1': {
+            url: 'https://www.gocountry105.com/',
+            callSign: 'KKGO',
+            name: 'Go Country 105 FM',
+            genre: 'Country',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://player.listenlive.co/23271/en/songhistory" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
+        },
+        '105.9': {
+            url: 'https://www.power106.com/',
+            callSign: 'KPWR',
+            name: 'Power 106',
+            genre: 'Rhythmic Contemporary',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://player.listenlive.co/44031" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+        },
+        '106.3': {
+            url: 'https://www.kmix1063.com/',
+            callSign: 'KGMX',
+            name: 'KMIX 106.3 FM',
+            genre: 'Adult Contemporary',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://streamdb9web.securenetsystems.net/ce/index.cfm?CFID=15cb1860-bc3d-4d40-9b44-4b6b920cb941&CFTOKEN=0&stationCallSign=KGMX" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'
+        },
+        '106.7': {
+            url: 'https://www.audacy.com/kroq',
+            callSign: 'KROQ',
+            name: 'The World Famous KROQ',
+            genre: 'Alternative Rock',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://www.audacy.com/stations/kroq#" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
+        },
+        '107.5': {
+            url: 'https://www.univision.com/radio/los-angeles-klve-fm',
+            callSign: 'KLVE',
+            name: 'K-Love',
+            genre: 'Spanish Adult Contemporary',
+            isIframe: true,
+            isCompatible: false,
+            iframe:'<iframe src="https://www.univision.com/radio/los-angeles-klve-fm" allow="autoplay" style="width:100%; height:200px;" scrolling="yes" frameborder="no"></iframe>'
+        },
+        '107.9': {
+            url: 'https://www.patreon.com/ksxs',
+            callSign: 'KSXS',
+            name: 'KSXS',
+            genre: 'Variety',
+            isIframe: false,
+            isCompatible: false,
+        },
+        '': {
+            url: '',
+            callSign: '',
+            name: '',
+            genre: '',
             isIframe: '',
             isCompatible: '',
             iframe:'<iframe src="" allow="autoplay" style="width:100%; height:200px;" scrolling="no" frameborder="no"></iframe>'

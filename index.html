@@ -28,22 +28,22 @@
                 </div>
                 <div class="dropdown-menu" id="dropdown-menu3" role="menu">
                     <div class="dropdown-content">
-                        <a href="#" class="dropdown-item">
+                        <a href="#" class="dropdown-item" data-img ='assets/images/Los-Angeles.png'>
                             Los Angeles
                         </a>
-                        <a href="#" class="dropdown-item">
+                        <a href="#" class="dropdown-item" data-img="assets/images/sandiegoSidebar.png">
                             San Diego
                         </a>
                     </div>
                 </div>
             </div>
-            <h1 id="location">FM Radio</h1>
+            <img id="location" src="./assets/images/sandiegoSidebar.png">
             <span class="icon">
                 <i id="power-btn" class="fa-solid fa-power-off"></i>
             </span>
         </header>
         <main>
-            <section>
+            <section id="city-bg">
                 <div id="radio-container">
                     <h2 id="name"></h2>
                     <div id="frequency">
@@ -60,7 +60,20 @@
                     <audio id="audio" SameSite='none' controls src="" autoplay></audio>
                 </div>
                 <div id="tuner-container">
-                    <input id="tuner" step="0.1" type="range" min="88.0" max="108.0">
+                    <input id="tuner" step="0.1" type="range" min="88.0" max="108.0" list="markers">
+                    <datalist id="markers">
+                        <option value="88.0">88.0</option>
+                        <option value="90.0">90.0</option>
+                        <option value="92.0">92.0</option>
+                        <option value="94.0">94.0</option>
+                        <option value="96.0">96.0</option>
+                        <option value="98.0">98.0</option>
+                        <option value="100.0">100.0</option>
+                        <option value="102.0">102.0</option>
+                        <option value="104.0">104.0</option>
+                        <option value="106.0">106.0</option>
+                        <option value="108.0">108.0</option>
+                    </datalist>
                 </div>
             </section>
             <section id="fav-stations">

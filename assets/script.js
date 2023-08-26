@@ -10,13 +10,11 @@ const radioEl = document.getElementById('radio-container');
 const locationEl =document.getElementById('location');
 const cityEl = document.querySelector('.dropdown-content');
 
-let city = '';
+let city = 'San Diego';
 
 cityEl.addEventListener('click', function(event){
-   locationEl.textContent = event.target.textContent;
-   console.log(event.target.textContent);
+   locationEl.src = event.target.getAttribute('data-img');
    city = event.target.textContent.replaceAll('\n','').trim();
-   console.log(event.target.innerHTML);
 });
 
 tunerEl.oninput = function () {
