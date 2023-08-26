@@ -9,12 +9,16 @@ const genreEl = document.getElementById('genre');
 const radioEl = document.getElementById('radio-container');
 const locationEl =document.getElementById('location');
 const cityEl = document.querySelector('.dropdown-content');
+const bodyBg = document.body.style;
 
 let city = 'San Diego';
 
 cityEl.addEventListener('click', function(event){
    locationEl.src = event.target.getAttribute('data-img');
    city = event.target.textContent.replaceAll('\n','').trim();
+   bodyBg.backgroundImage = `url('https://source.unsplash.com/1600x900/?landscape?`+city+`')`;
+   bodyBg.backgroundRepeat = 'no-repeat';
+   bodyBg.backgroundSize = 'cover';
 });
 
 tunerEl.oninput = function () {
