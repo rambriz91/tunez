@@ -13,7 +13,7 @@ The Tunez app allows the user to tune through radio livestreams as if they were 
 
 ## Usage
 
-
+![Alt text](assets/images/tunez-gif.gif)
 
 ## Links
 
